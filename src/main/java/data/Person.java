@@ -10,7 +10,9 @@ import java.util.Set;
  */
 @Value
 @Builder
+@EqualsAndHashCode(exclude = "beers")
 public class Person {
+
 
     @Singular
     private List<String> beers;
@@ -23,7 +25,6 @@ public class Person {
     @NonNull
     private Integer age; //
     private int salary;//
-
 
 
 }

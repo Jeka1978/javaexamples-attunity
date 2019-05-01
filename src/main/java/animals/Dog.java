@@ -5,11 +5,12 @@ package animals;
  */
 public class Dog implements Animal {
 
-    public static void stam(){
 
-    }
     public void makeVoice() {
-        int x;
         System.out.println("Bark bark");
+    }
+
+    public void bringStick() {
+        System.out.println("This is your stick, take it");
     }
 }

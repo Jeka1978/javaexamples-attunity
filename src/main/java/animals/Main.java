@@ -1,6 +1,8 @@
 package animals;
 
 
+import data.Person;
+
 import java.awt.*;
 
 import static java.lang.Math.*;
@@ -9,7 +11,7 @@ import static java.lang.Math.*;
  * @author Evgeny Borisov
  */
 public class Main {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
 
 
         double sin = sin(30);

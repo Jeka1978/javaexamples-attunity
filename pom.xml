@@ -10,6 +10,12 @@ d
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>0.16</version>
+        </dependency>
+        <!--new Faker().gameOfThrones();-->
 
         <dependency>
             <groupId>org.reflections</groupId>
