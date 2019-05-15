@@ -12,6 +12,8 @@ import lombok.RequiredArgsConstructor;
 @Getter
 public enum MaritalStatus {
 
+    
+
     SINGLE(1,"רווק"),
     MARRIED(2,"נשוי"),
     DIVORCED(3,"גרוש");
