@@ -50,17 +50,20 @@ public class EmployeeUtil {
                 toMap(Employee::getName, Employee::getSalary, Integer::sum));
     }
 
+    public static Map<Seniority, List<Employee>> bySeniority(List<Employee> employees) {
+      return   employees.stream()
+                .collect(groupingBy(Seniority::getSeniority));
+    }
+
     public static void main(String[] args) {
         List<Employee> employees = asList(
-                Employee.builder().name("MOSHE").salary(12).build(),
+                Employee.builder().name("MOSHE").salary(1).build(),
                 Employee.builder().name("MOSHE").salary(15).build(),
                 Employee.builder().name("Shlomo").salary(15).build(),
-                Employee.builder().name("Smadar").salary(16).build()
+                Employee.builder().name("Smadar").salary(22).build()
         );
-        Map<Integer, List<Employee>> map = employees.stream()
-                .collect(groupingBy(employee -> employee.getSalary()));
+        Map<Seniority, List<Employee>> map = bySeniority(employees);
         System.out.println(map);
-
 
     }
 }
